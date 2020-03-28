@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+body{
+    background-color: #24252a ;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+header li{
+    display: inline-block;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+header li:nth-child(2) {
+    background-color:  #038309;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+div#logo{
+    font-family: Righteous;
+    font-size: larger;
+}
+
+#logo span{
+    color: #038309;
+}
+
+main{
+    padding: 10px;
+    display: flex;
+}
+
+#container{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+#happy{
+    width: 200px;
+    height: 200px;
+    background-color: #e27900 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#happy #eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#happy .eye{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#happy .eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+#happy::after{
+    content: "";
+    background-color: #000;
+    width: 80px;
+    height: 35px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* straight face emoji style */
+
+#straight{
+    width: 200px;
+    height: 200px;
+    background-color: #832008 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+#straight #s-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 25% 10%;
+}
+
+
+#straight .s-eyeball{
+    background-color: #000;
+    width: 20px;
+    height: 5px;
+
+}
+
+#straight::after{
+    content: "";
+    background-color: #000;
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* surprise Emoji */
+
+#surprise{
+    width: 200px;
+    height: 200px;
+    background-color: #ebee22 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#surprise #x-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#surprise .x-eye{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#surprise .x-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#surprise::after{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top:160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* lips zipped emoji */
+
+#zipped{
+    width: 200px;
+    height: 200px;
+    background-color: #989c98 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#zipped #z-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#zipped .z-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    border-radius:35%;
+}
+
+/* Eyeroll emoji */
+
+#roll{
+    width: 200px;
+    height: 200px;
+    background-color: #5f9961 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#roll #r-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#roll .r-eye{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#roll .r-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 40px;
+    }
+
+#roll::after{
+    content: "";
+    background-color: #000;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Smile emoji */
+
+#fake{
+    width: 200px;
+    height: 200px;
+    background-color: #2661e2 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#fake #f-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#fake .f-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#tongue::after{
+    content: "";
+    background-color: rgb(255, 0, 0);
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top:165px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fake::after{
+    content: "";
+    background-color: #fff;
+    width: 80px;
+    height: 10px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:135px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#fake::before{
+    content: "";
+    background-color: #000;
+    width: 80px;
+    height: 40px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* heart emoji */
+
+#heart {
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    right: 0;
+    bottom: 30%;
+    left: 5px;
+    background-color: rgb(156, 9, 100);
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+  }
+
+  #heart::after {
+    background-color: rgb(156, 9, 100);
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+
+  #heart::before {
+    content:"" ;
+    background-color: rgb(156, 9, 100);
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(0.8) rotate(-45deg);
+      }
+    50% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+
+
+  /* Tongue out emoji */
+
+  #out{
+    width: 200px;
+    height: 200px;
+    background-color: #098013 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#out #o-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#out .o-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    border-radius: 35%;
+}
+
+.tongue::after{
+    content: "";
+    background-color: rgb(255, 0, 0);
+    width: 35px;
+    height: 60px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#out::before{
+    content: "";
+    background-color: #000;
+    width: 80px;
+    height: 40px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:155px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* goofy tongue out emoji */
+
+#goofy{
+    width: 200px;
+    height: 200px;
+    background-color: #6651b3 ;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#goofy #g-eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 14%;
+}
+
+#goofy .g-eye{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goofy .g-eyeball{
+    background-color: #000;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 35%;
+}
+
+.ttongue::after{
+    content: "";
+    background-color: rgb(255, 0, 0);
+    width: 35px;
+    height: 60px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:135px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-30deg);
+}
+
+#goofy::before{
+    content: "";
+    background-color: #000;
+    width: 80px;
+    height: 40px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: absolute;
+    top:130px;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-30deg);
+
+}
